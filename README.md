@@ -3,12 +3,19 @@
 Algorithm study 알고리즘 공부
 
 //////////////////////////////////
+
 competition website
+
 https://www.acmicpc.net/
+
 https://programmers.co.kr/
+
 https://groom.io/
+
 https://swexpertacademy.com/
+
 https://codeforces.com/
+
 etc.
 //////////////////////////////////
 
