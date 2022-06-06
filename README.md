@@ -31,3 +31,7 @@ e.g. O(N)    : 5N + 3, 2N + 10lgN, 10N
      O(1)    : 5, 16, 36
      
 O(1) < O(lgN) < O(N) < O(NlgN) < O(N^2) < O(2^N) < O(N!)!
+
+![image](https://user-images.githubusercontent.com/50208536/172078061-b48904e6-81fa-412c-b634-a779a436d1fb.png)
+
+By Madison Stankevich (Dev.to) https://dev.to/madisonstankevich/big-o-notation-a-brief-overview-for-the-beginner-1o13
