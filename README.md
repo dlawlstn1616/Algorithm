@@ -35,3 +35,7 @@ O(1) < O(lgN) < O(N) < O(NlgN) < O(N^2) < O(2^N) < O(N!)!
 ![image](https://user-images.githubusercontent.com/50208536/172078061-b48904e6-81fa-412c-b634-a779a436d1fb.png)
 
 By Madison Stankevich (Dev.to) https://dev.to/madisonstankevich/big-o-notation-a-brief-overview-for-the-beginner-1o13
+
+
+Space Complexity(공간복잡도) : the amount of memory space required to solve an instance of the computational problem as a function of characteristics of the input. 입력의 크기와 문제를 해결하는데 걸리는 공간의 상관관계
+
