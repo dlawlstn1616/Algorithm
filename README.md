@@ -2,6 +2,10 @@
 
 Algorithm study for online coding test 코딩 테스트 대비 알고리즘 공부
 
+바킹독의 실전 알고리즘 영상을 보며 정리한 글입니다.
+https://www.youtube.com/c/BaaarkingDog
+https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x03.md
+
 //////////////////////////////////
 
 competition website
@@ -16,7 +20,7 @@ https://swexpertacademy.com/
 
 https://codeforces.com/
 
-etc.
+etc...
 
 //////////////////////////////////
 
