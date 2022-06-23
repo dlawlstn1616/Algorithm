@@ -31,9 +31,16 @@ Array : data structure consisting of a collection of elements (values or variabl
 int a[21];
 int b[21][21];
  
-// 1. memset
+// 1. memset             
+/*
+#include <cstring>
+void* memset(void* ptr, int value, size_t num); void* ptr : memory start address 메모리 시작 주소, int value : setting value 셋팅 값, size_t num : length 길이
+*/
+
 memset(a, 0, sizeof a);
 memset(b, 0, sizeof b);
+ 
+-> shortest! but value must be 0 because it just represent 1byte, so can't represent int(4bytes) or others.
  
 // 2. for
 for(int i=0; i<21; i++)
@@ -43,7 +50,17 @@ for(int i=0; i<21; i++){
             b[i][j] = 0;
 }
 
+-> longest! but fewest error.
+
 // 3. fill
+
+/*
+#include <algorithm>
+void fill (ForwardIterator first, ForwardIterator last, const T& val);
+first: 채우고자 하는 자료구조의 시작위치 iterator, last: 채우고자 하는 자료구조의 끝위치 iterator, val: first부터 last전까지 채우고자 하는 값
+*/
 fill(a, a+21, 0);
 for(int i=0; i<21; i++)
       fill(b[i], b[i]+21, 0);
+
+-> longer than memset, but fewer error. OK!!!
