@@ -3,3 +3,12 @@ Array : data structure consisting of a collection of elements (values or variabl
       - properties
       1.check or change values of k's elements in O(1). 
         O(1)에 k번째 원소를 확인/변경 가능.
+      2.memory overhead is almost zero
+        추가적으로 소모되는 메모리의 양이 거의 없음
+      3.high cache hit rate
+        캐시 힛 비율이 높다.
+      4.restriction during allocation (because of continuous memory space)
+        메모리 상에 연속한 구간을 잡아야 해서 할당에 제약이 걸림
+        
+      insert or delete values of array in random space : O(N) (because values need to pull or push from index which is inserted or deleted to end)
+      배열에서 임의의 위치에 있는 원소를 추가하거나 제거할 때 O(N)의 시간복잡도가 필요하다. 왜냐하면 추가하거나 제거할 때는 해당 위치부터 끝까지 원소들을 밀거나 당겨야한다.
