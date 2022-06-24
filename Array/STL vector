@@ -1,0 +1,11 @@
+reference : https://cplusplus.com/reference/vector/vector
+
+///////////////////////////
+
+definition
+
+///////////////////////////
+
+almost same as array, but size is changeable!!
+배열과 거의 동일한 기능을 수행하는 자료구조, 배열과 마찬가지로 원소가 메모리에 연속하게 저장되어 있기 떄문에 O(1)에 인덱스를 가지고 각 원소로 접근 가능.
+단, 배열과 달리 크기를 자유자재로 변경할 수 있다!!
