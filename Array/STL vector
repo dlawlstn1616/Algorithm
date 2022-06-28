@@ -10,6 +10,13 @@ almost same as array, but size is changeable!!
 배열과 거의 동일한 기능을 수행하는 자료구조, 배열과 마찬가지로 원소가 메모리에 연속하게 저장되어 있기 떄문에 O(1)에 인덱스를 가지고 각 원소로 접근 가능.
 단, 배열과 달리 크기를 자유자재로 변경할 수 있다!!
 
+
+///////////////////////////
+
+method
+
+///////////////////////////
+
 e.g.
 
 #include <iostream>
@@ -28,9 +35,16 @@ int main(void) {
   v3.erase(v3.begin()+2); // {1,2,4}; 기본적으로 구현이 되어 있다.
 
   vector<int> v4; // {}
-  v4 = v3; // {1,2,4}
+  v4 = v3; // {1,2,4} deep copy
   cout << v4[0] << v4[1] << v4[2] << '\n';
   v4.pop_back(); // {1,2} 벡터에 제일 끝 원소 제거하기 O(1) <-> pop_front() 벡터 제일 앞에 원소 제거하기 O(N)
   v4.clear(); // {}
 }
 출처 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/0x03/vector_example.cpp
+
+
+vector<int> v1 = {1,2,3,4,5,6};
+
+// 1. range-based for loop (since C++11)
+for (int e : v1)
+  
