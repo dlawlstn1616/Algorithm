@@ -46,5 +46,14 @@ int main(void) {
 vector<int> v1 = {1,2,3,4,5,6};
 
 // 1. range-based for loop (since C++11)
-for (int e : v1)
+for (int e : v1)      //  v1의 복사된 값이 e로 들어감, <-> int& e : v1은 원본이 들어감
+  cout << e << ' ';
   
+// 2. not bad
+for(int i = 0; i < v1.size(); i++)
+  cout << v1[i] << ' ';
+  
+// 3. ***WRONG***
+for(int i = 0; i <= v1.size()-1; i++) // 기본적으로 vector의 size() method는 unsigned int를 반환하는데 v1이 빈 vector라면 unsigned int 0에서 int 1을 빼는 식이 되고 
+                                      // 해당 연산이 진행되면 자동으로 unsigned int로 계산되어서 결과가 -1이 아니라 4294967295가 된다. (unsigned int overflow) 
+  cout << v1[i] << ' ';
