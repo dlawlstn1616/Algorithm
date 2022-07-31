@@ -120,3 +120,5 @@ int main(void) {
 
 push_front, pop_front, push_back, pop_back : O(1)
 iterator : pointing address
+
+floyd's cycle finding algorithm
